@@ -1,0 +1,53 @@
+body.light {
+    background-color: var(--light-mode-bg);
+}
+
+body.light .primary-header {
+    background-color:var(--light-mode-bg);;
+    box-shadow: 0px 4px 3px 0px rgba(0,0,0,.1);
+}
+
+body.light .primary-header .title,
+body.light .primary-header .btn,
+body.light .filter-form:before,
+body.light .search-form:before,
+body.light .search-form ::placeholder,
+body.light .country-wrapper__content {
+    color: var(--light-mode-text);
+}
+
+body.light .search-input,
+body.light .filter-input {
+    background-color: var(--light-mode-elements); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.10);
+    color: var(--light-mode-text);
+}
+
+body.light .countries-list .country-item {
+    background-color: var(--white);
+    color: var(--light-mode-elements);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.10);
+}
+
+body.light .btn {
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.10);
+    color: var(--light-mode-elements);
+}
+  
+body.light .btn:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,.5);
+}
+  
+body.light .btn:focus {
+    outline: none;
+    color: var(--light-mode-elements);
+}
+  
+body.light .btn-back:before {
+    color: var(--light-mode-elements);
+}
+
+body.light .btn-switch {
+    background-color: var(--white);
+}

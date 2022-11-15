@@ -1,0 +1,115 @@
+.countries-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5rem 0 0 0;
+}
+
+@media only screen and (min-width: 376px) {
+    .countries-top {
+        flex-direction: row;
+        margin: 3rem 0 0 0;
+    }
+}
+
+.countries-top .search {
+    flex-basis: 50%;
+}
+
+.countries-top .filter {
+    display: flex;
+    flex-basis: 50%;
+}
+
+@media only screen and (min-width: 376px) {
+    .countries-top .filter {
+        justify-content: flex-end;
+    }
+}
+
+.countries-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3rem 0;
+    gap: 2rem;
+}
+
+@media only screen and (min-width: 376px) {
+    .countries-list {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+.countries-list .country-item {
+    background-color: var(--dark-mode-elements);
+    border-radius: .25rem;
+    color: var(--white);
+    cursor: pointer;
+    flex: calc(25% - 3rem);
+    overflow: hidden;
+    transition: all .3s linear;  
+    text-decoration: none;
+}
+
+
+
+.countries-list .country-item:hover {
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,.5);
+    transform: scale(1.05);
+}
+
+.country-item .country-item__flag {
+   height: 180px;
+   overflow: hidden;
+   width: 100%;
+}
+
+@media only screen and (min-width: 376px) {
+    .country-item .country-item__flag {
+        height: 150px;
+    }
+}
+
+.country-item .country-item__flag img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media only screen and (min-width: 376px) {
+    .country-item .country-item__flag img {
+        height: 150px;
+    }
+}
+
+.country-item .country-item__body {
+    padding: 1.25rem;
+}
+
+@media only screen and (min-width: 376px) {
+    .country-item .country-item__body {
+        padding: 1.25rem 1.25rem 2.25rem 1.25rem;
+    }
+}
+
+.countries-list .country-item .title {
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+}
+
+.countries-list .country-item__info {
+    font-size: .875rem;
+}
+
+.countries-list .country-item__info__row {
+    margin-bottom: .25rem;
+}
+
+.countries-list .country-item__info .label {
+    font-weight: var(--font-weight-bold);
+}

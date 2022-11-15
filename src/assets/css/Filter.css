@@ -1,0 +1,57 @@
+.filter-form {
+    width: 100%;
+    position: relative;
+}
+
+.filter-form:before {
+    color: var(--white);
+    content: '\f078';
+    font-family: var(--icon-font);
+    position: absolute;
+    right: 0.5rem;
+    top: 14px;
+    font-size: .5rem;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 376px) {
+    .filter-form {
+        width: 10rem;
+    }
+}
+.filter-input {
+    background-color: var(--dark-mode-elements);
+    border: none;
+    border-radius: .25rem;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,.25);
+    color: var(--white);
+    cursor: pointer;
+    font-size: .75rem;
+    margin-top: 1rem;
+    padding: .75rem 1rem .75rem 1rem;
+    position: relative;
+    transition: all .3s linear;
+    width: calc(100% - 5rem);
+
+    /** for the dropdown indicator */
+    appearance: none;
+}
+
+@media only screen and (min-width: 376px) {
+    .filter-input {
+        margin-top: 0;
+        max-width: 10rem;
+        width: 100%;
+    }
+}
+
+.filter-input:focus,
+.filter-input:hover {
+    border:none;
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,.15);
+    outline: none;
+}
+
+::placeholder {
+    color: var(--white);
+}

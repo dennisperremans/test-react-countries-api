@@ -1,0 +1,14 @@
+.primary-footer {
+    align-items: center;
+    background-color: var(--dark-mode-elements);
+    bottom: 0;
+    color: var(--white);
+    display: flex;
+    font-size: .75rem;
+    height: 2.75rem;
+    justify-content: center;
+    margin-top: 2rem;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
